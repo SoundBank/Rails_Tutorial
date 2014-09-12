@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all",
-                                            "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+
+<style>
+  .content-wrapper
+  {display: block;margin-left: auto;margin-right: auto;width:95%;background:silver;padding:10px;-moz-border-radius: 15px;border-radius: 15px;}
+
+  .main-wrapper{background:gray;}
+</style>
+	
+<title> <%= full_title(yield(:title)) %> </title>
+
+<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+  
+<body class="main-wrapper">
+  <div class="content-wrapper">
+     <%= yield %>
+  <div>
+  </body>
 </html>

@@ -8,6 +8,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+  gem 'tzinfo', '0.3.41'
 end
 
 group :test do
