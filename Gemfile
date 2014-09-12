@@ -18,6 +18,7 @@ group :test do
 end
 
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.1.2'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails', '4.0.3'
 gem 'uglifier', '2.1.1'
