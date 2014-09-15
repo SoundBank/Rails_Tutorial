@@ -17,12 +17,12 @@ module SessionsHelper
 	end
 	
 	  def current_user?(user)
-    user == current_user
-  end
+		user == current_user
+		end
 
- def current_user=(user)
+	def current_user=(user)
     @current_user = user
-  end
+	end
 	
 	def sign_out
     current_user.update_attribute(:remember_token,
